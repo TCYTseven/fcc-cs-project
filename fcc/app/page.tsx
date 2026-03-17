@@ -80,7 +80,7 @@ export default function Home() {
                   <p className="text-[#4A4A4A] mb-6 line-clamp-3">
                     Our team of experienced licensed therapists provides individual, family, and group counseling to help you navigate life's challenges, fostering resilience and emotional well-being.
                   </p>
-                  <Link href="/services/mental-health" className="text-[#E65100] font-semibold hover:underline flex items-center">
+                  <Link href="/mental-health-program" className="text-[#E65100] font-semibold hover:underline flex items-center">
                     Learn More <span>→</span>
                   </Link>
                 </div>
@@ -93,7 +93,7 @@ export default function Home() {
                   <p className="text-[#4A4A4A] mb-6 line-clamp-3">
                     Comprehensive substance use disorder services designed to support recovery. We provide a safe, non-judgmental environment for healing and long-term sobriety.
                   </p>
-                  <Link href="/services/addictions" className="text-[#E65100] font-semibold hover:underline flex items-center">
+                  <Link href="/addictions-program" className="text-[#E65100] font-semibold hover:underline flex items-center">
                     Learn More <span>→</span>
                   </Link>
                 </div>
