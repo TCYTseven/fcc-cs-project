@@ -1,82 +1,91 @@
-import { Navbar } from "@/components/navbar";
-import { SiteHeader } from "@/components/site-header";
-import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import Link from "next/link";
 
 export default function AddictionsProgram() {
   return (
-    <div className="min-h-screen bg-amber-100/50">
-      <div className="mx-auto max-w-4xl bg-white shadow-lg">
-        <SiteHeader />
-        <Header />
-        <Navbar />
+    <div className="min-h-screen bg-[#F8F8F8] text-[#262626] font-sans">
+      <div className="mx-auto max-w-7xl bg-white shadow-sm min-h-screen flex flex-col">
+        <main className="flex-1">
+          {/* Page Header */}
+          <section className="px-6 py-12 text-center border-b border-[#F0F0F0] bg-[#FFF3E0]/30">
+            <h1 className="text-3xl md:text-4xl font-bold text-[#262626] mb-4 uppercase tracking-tight">
+              Addictions Program
+            </h1>
+            <p className="text-[#4A4A4A] text-lg max-w-2xl mx-auto">
+              Multi-faceted support and treatment for substance use disorders in Somerset County.
+            </p>
+          </section>
 
-        <main className="px-6 py-10">
-          <h2 className="text-center text-3xl font-bold text-zinc-900 mb-8">
-            Addictions Program
-          </h2>
+          {/* Main Content Section */}
+          <section className="px-6 py-16 max-w-5xl mx-auto">
+            <div className="space-y-12">
+              <div className="prose prose-zinc max-w-none">
+                <p className="text-lg leading-relaxed text-[#4A4A4A]">
+                  The Addictions Program of Family & Community Services is a multi-faceted program 
+                  that addresses many addictive behaviors including alcohol and other drug abuse. 
+                  The program is licensed by the State of New Jersey, Department of Addiction Services (DAS). 
+                  Clients with substance abuse problems are given alcohol/drug screens for assessment 
+                  purposes. Services are provided on a sliding scale for those who live or work in 
+                  Somerset County and the immediate surrounding communities.
+                </p>
+              </div>
 
-          <div className="space-y-8 text-left text-zinc-700">
-            <section>
-              <p className="leading-relaxed">
-                The Addictions Program of Family & Community Services is a
-                multi-faceted program that addresses many addictive behaviors
-                including alcohol and other drug abuse. The program is licensed by
-                the State of New Jersey, Department of Addiction Services (DAS).
-                Clients with substance abuse problems are given alcohol/drug
-                screens for assessment purposes. Services are provided on a
-                sliding scale for those who live or work in Somerset County and
-                the immediate surrounding communities.
-              </p>
-            </section>
+              {/* Programs Details */}
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-white p-8 rounded-2xl border border-[#E5E5E5] shadow-sm">
+                  <h2 className="text-2xl font-bold text-[#262626] mb-4 uppercase tracking-tight">
+                    Counseling
+                  </h2>
+                  <p className="text-[#4A4A4A] leading-relaxed">
+                    We recognize that the addiction affects everyone that has a significant relationship 
+                    with the addict. Therefore, family members are offered individual and family 
+                    counseling to address family issues and co-dependency. Our services are offered 
+                    to children, adolescents, adults, seniors, and their families.
+                  </p>
+                </div>
 
-            <section>
-              <h3 className="text-xl font-bold text-zinc-900 mb-2">Counseling</h3>
-              <p className="leading-relaxed">
-                We recognize that the addiction affects everyone that has a
-                significant relationship with the addict. Therefore, family
-                members are offered individual and family counseling to address
-                family issues and co-dependency. Our services are offered to
-                children, adolescents, adults, seniors, and their families.
-              </p>
-            </section>
+                <div className="bg-white p-8 rounded-2xl border border-[#E5E5E5] shadow-sm">
+                  <h2 className="text-2xl font-bold text-[#262626] mb-4 uppercase tracking-tight">
+                    DWI
+                  </h2>
+                  <p className="text-[#4A4A4A] leading-relaxed">
+                    FCSSC is one of the leading counseling services in Somerset County for clients 
+                    charged with driving while intoxicated. Our program offers clients individual 
+                    and group therapy, and introduces each client to Alcoholics Anonymous. 
+                    The goal of this program is to prevent future drinking and driving episodes. 
+                    Emphasis is placed on responsible drinking and the consequences of alcohol abuse.
+                  </p>
+                </div>
+              </div>
 
-            <section>
-              <h3 className="text-xl font-bold text-zinc-900 mb-2">DWI</h3>
-              <p className="leading-relaxed">
-                FCSSC is one of the leading counseling services in Somerset County
-                for clients charged with driving while intoxicated. Our program
-                offers clients individual and group therapy, and introduces each
-                client to Alcoholics Anonymous. The goal of this program is to
-                prevent future drinking and driving episodes. Emphasis is placed
-                on responsible drinking and the consequences of alcohol abuse.
-              </p>
-            </section>
-
-            <section>
-              <h3 className="text-xl font-bold text-zinc-900 mb-4">
-                The following services are available for substance abuse and other
-                addictive behaviors with individuals and group counseling:
-              </h3>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Comprehensive Assessments for Adults and Adolescents</li>
-                <li>Alcohol and Other Drug Abuse</li>
-                <li>Legal Issues (DWI/Probation)</li>
-                <li>
-                  Assessment and referral for gambling and Compulsive
-                  Spending/Shopping
-                </li>
-                <li>Co-dependency/Family Issues</li>
-                <li>Aftercare Counseling</li>
-                <li>Urinalysis Drug Screening</li>
-                <li>Alcohol swab screening</li>
-              </ul>
-              <p className="mt-4 italic">
-                When indicated, clients are also referred for psychiatric
-                consultation.
-              </p>
-            </section>
-          </div>
+              {/* Services List */}
+              <div className="bg-[#F8F8F8] p-8 md:p-12 rounded-2xl border border-[#E5E5E5]">
+                <h2 className="text-2xl font-bold text-[#262626] mb-8 uppercase text-center">
+                  Services Available
+                </h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {[
+                    "Comprehensive Assessments",
+                    "Alcohol and Other Drug Abuse",
+                    "Legal Issues (DWI/Probation)",
+                    "Gambling & Compulsive Spending",
+                    "Co-dependency/Family Issues",
+                    "Aftercare Counseling",
+                    "Urinalysis Drug Screening",
+                    "Alcohol swab screening"
+                  ].map((service, index) => (
+                    <div key={index} className="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm border border-[#F0F0F0]">
+                      <span className="text-[#E65100] mt-1">✓</span>
+                      <span className="text-[#4A4A4A] font-medium">{service}</span>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-8 text-center italic text-[#4A4A4A]">
+                  When indicated, clients are also referred for psychiatric consultation.
+                </p>
+              </div>
+            </div>
+          </section>
         </main>
 
         <Footer />

@@ -22,8 +22,6 @@ const navItems = [
       { href: "/events/photos", label: "Event Photos" },
     ],
   },
-  { href: "/addictions-program", label: "Addictions Program" },
-  { href: "/mental-health-program", label: "Mental Health Program" },
   {
     href: "/services",
     label: "Services",
