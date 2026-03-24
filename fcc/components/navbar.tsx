@@ -26,8 +26,8 @@ const navItems = [
     href: "/services",
     label: "Services",
     dropdown: [
-      { href: "/services/addictions", label: "Addictions Program" },
-      { href: "/services/mental-health", label: "Mental Health Program" },
+      { href: "/addictions-program", label: "Addictions Program" },
+      { href: "/mental-health-program", label: "Mental Health Program" },
     ],
   },
   {
