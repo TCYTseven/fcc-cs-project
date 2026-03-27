@@ -23,11 +23,40 @@ export default async function ServicePage({ params }: ServicePageProps) {
         <p key={index}>{text}</p>
       ))}
       {content.bullets ? (
-        <ul className="list-disc space-y-2 pl-5">
-          {content.bullets.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
+        <>
+          <p className="font-semibold text-[#1a1a1a]">
+            {slug === "addictions"
+              ? "The following services are available:"
+              : slug === "mental-health"
+              ? "Issues addressed by licensed therapists include:"
+              : "Services include:"}
+          </p>
+          <ul className="list-disc space-y-2 pl-5">
+            {content.bullets.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </>
+      ) : null}
+      {content.secondaryBullets ? (
+        <>
+          <p className="font-semibold text-[#1a1a1a]">{content.secondaryBullets.heading}:</p>
+          <ul className="list-disc space-y-2 pl-5">
+            {content.secondaryBullets.items.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </>
+      ) : null}
+      {content.resources ? (
+        <>
+          <p className="font-semibold text-[#1a1a1a]">Other Resources:</p>
+          <ul className="list-disc space-y-1 pl-5">
+            {content.resources.map((r) => (
+              <li key={r}>{r}</li>
+            ))}
+          </ul>
+        </>
       ) : null}
       <p>
         <Link href="/contact/appointment" className="font-semibold text-[#1a3683]">
