@@ -33,9 +33,20 @@ export default function SupportPage() {
       sectionLinks={supportNav}
     >
       <p>
-        FCSSC has served the community since 1960 thanks to donors, volunteers,
-        and partners who believe care should not depend on wealth. Explore the
-        ways you can help below.
+        We rely on the community and private donations to provide quality and
+        vital services to our clients. Who are our clients? They are your
+        friends, neighbors, coworkers, and maybe even family members—the single
+        mother trying to help her teenage son, the husband and wife trying to
+        hang on to their marriage and family, the woman pinching pennies to buy
+        food for her children, the child trying to cope with issues too large
+        for anyone, let alone a child. They are regular people trying to survive
+        as best they can.
+      </p>
+      <p>
+        We won&apos;t solve all the problems in our community, but we can help
+        the clients we currently touch. Most of these clients have nowhere else
+        to go. Please help us continue to help those who want to be healthy,
+        productive members of society.
       </p>
       <ul className="space-y-6">
         {highlights.map((item) => (

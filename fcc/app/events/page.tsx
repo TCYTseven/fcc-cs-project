@@ -19,7 +19,7 @@ export default function EventsPage() {
   return (
     <SubpageShell
       title="Events and Fund-Raisers"
-      subtitle="View our upcoming events."
+      subtitle="FCSSC relies on successful fundraisers to help keep essential services affordable and available."
       sectionLinks={eventsNav}
       fullWidth
     >

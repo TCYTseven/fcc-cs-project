@@ -10,16 +10,17 @@ export default function WhyChoosePage() {
       sectionLinks={aboutNav}
     >
       <p>
-        Family and Community Services of Somerset County (FCSSC) believes
-        everyone deserves quality mental health and substance use support,
-        regardless of income. Our nonprofit model, experienced clinicians, and
-        community partnerships are built around that promise.
+        Here are just a few reasons to make Family and Community Services of
+        Somerset County your choice for counseling services:
       </p>
       <ul className="list-disc space-y-2 pl-5">
-        <li>Licensed therapists and credentialed addiction professionals</li>
-        <li>Individual, family, and group options tailored to your goals</li>
-        <li>Commitment to serving clients regardless of ability to pay</li>
-        <li>Longstanding ties to Somerset County schools, employers, and peers</li>
+        <li>Quick response to crisis</li>
+        <li>Sliding scale fee to individuals and families</li>
+        <li>Affordable rates for businesses</li>
+        <li>State-licensed, highly-qualified therapists</li>
+        <li>We&apos;re conveniently located</li>
+        <li>Our offices are comfortable and non-institutional</li>
+        <li>We have more than half a century of experience serving the public</li>
       </ul>
       <p>
         Ready to take the next step?{" "}
