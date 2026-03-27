@@ -10,22 +10,24 @@ export default function CorporateMatchingPage() {
       sectionLinks={supportNav}
     >
       <p>
-        Many employers match charitable donations made by employees, retirees,
-        or spouses. If your company offers a matching gift program, you may be
-        able to double or triple the impact of your contribution to FCSSC.
+        Many companies have matching programs for employees who donate to
+        charitable organizations. This is a great way to make your donation
+        dollars go even further!
       </p>
       <p>
-        Check with your HR or community relations team for forms and guidelines.
-        Our development staff can provide tax ID and acknowledgment details on
-        request—call{" "}
-        <a href="tel:7323561082" className="font-semibold text-[#1a3683]">
-          732-356-1082
+        Each company is different with their corporate matching programs. Please
+        check with your Human Resources staff or department to find out about
+        your company&apos;s specific program.
+      </p>
+      <p>
+        Feel free to reach out to Richard Schumann at{" "}
+        <a
+          href="mailto:rschumann@fcssomerset.org"
+          className="font-semibold text-[#1a3683]"
+        >
+          rschumann@fcssomerset.org
         </a>{" "}
-        or use the{" "}
-        <Link href="/contact" className="font-semibold text-[#1a3683]">
-          contact form
-        </Link>{" "}
-        when available.
+        to discuss your corporation&apos;s matching gift today!
       </p>
     </SubpageShell>
   );
