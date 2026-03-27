@@ -34,8 +34,13 @@ export default function ContactPage() {
         </Link>
       </p>
       <p className="text-sm text-gray-600">
-        A secure contact form and office hours will be added to this page.
+        Get in touch and let us care for you and your loved ones. We are here
+        to help.
       </p>
+      <div className="rounded-lg bg-gray-50 p-6 border border-gray-200">
+        <p className="font-semibold text-[#1a1a1a] mb-1">Business Hours</p>
+        <p className="text-sm text-gray-700">Monday – Friday, 9:00 AM to 6:00 PM</p>
+      </div>
     </SubpageShell>
   );
 }
